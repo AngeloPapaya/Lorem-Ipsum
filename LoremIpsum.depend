@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1717870755 source:/home/ricoevil13/LoremIpsum/Printer.cpp
+	"Printer.h"
+	<iostream>
+	<iterator>
+
+1414572004 /home/ricoevil13/LoremIpsum/Printer.h
+	<string>
+	<vector>
+
+1717871104 source:/home/ricoevil13/LoremIpsum/Program.cpp
+	"LoremIpsumLinesProviderFromFile.h"
+	"RandomWordsGenerator.h"
+	"LoremIpsumSearcher.h"
+	"Printer.h"
+	<iostream>
+
+1414571620 /home/ricoevil13/LoremIpsum/LoremIpsumLinesProviderFromFile.h
+	<string>
+	<vector>
+
+1717871464 /home/ricoevil13/LoremIpsum/RandomWordsGenerator.h
+	<string>
+	<vector>
+
+1717867235 /home/ricoevil13/LoremIpsum/LoremIpsumSearcher.h
+	<vector>
+	<string>
+
+1717871328 source:/home/ricoevil13/LoremIpsum/RandomWordsGenerator.cpp
+	"RandomWordsGenerator.h"
+	<cstdlib>
+	<ctime>
+	<sstream>
+
+1717869931 source:/home/ricoevil13/LoremIpsum/LoremIpsumLinesProviderFromFile.cpp
+	"LoremIpsumLinesProviderFromFile.h"
+	<fstream>
+	<stdexcept>
+	<chrono>
+	<thread>
+
+1717871104 source:/home/ricoevil13/LoremIpsum/LoremIpsumSearcher.cpp
+	"LoremIpsumSearcher.h"
+	<sstream>
+	<unordered_set>
+	<algorithm>
+
