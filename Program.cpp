@@ -3,55 +3,26 @@
 #include "LoremIpsumSearcher.h"
 #include "Printer.h"
 
-#include <iostream>
-
-using namespace std;
 
 int main()
 {
 
-
 	//load lines of lorem ipsum text
 	LoremIpsumLinesProviderFromFile linesProvider("lorem_ipsum.txt");
-	vector<string> lines = linesProvider.GetLoremIpsumLines();
+	std::vector<std::string> lines = linesProvider.GetLoremIpsumLines();
 
     RandomWordsGenerator randomWordsGenerator;
     LoremIpsumSearcher loremIpsumSearcher;
 
-//    for (auto line: lines) {
-        //get few random words
-        vector<string> randomWords = randomWordsGenerator.GetFewRandomWords(lines);
-//        std::cout<<"RANDOM WORDS --- ";
-//        for(auto r: randomWords)
-//            std::cout<<r<<" --- ";
-//        std::cout<<"\n";
-        //search these words in the lorem ipsum text
-//		auto data = loremIpsumSearcher.Search(lines, randomWords);
-        vector<string> result = loremIpsumSearcher.Search(lines, randomWords);
 
-		//display result of the search, break the loop if the user decides so
+    //get few random words
+    std::vector<std::string> randomWords = randomWordsGenerator.GetFewRandomWords(lines);
 
-//		result.insert(result.end(), data->begin(), data->end() );
-		Printer::PrintOnOutputandWaitForUserToDecideWhatIsNext(result, randomWords);
-//    }
+    //search these words in the lorem ipsum text
+    std::vector<std::string> result = loremIpsumSearcher.Search(lines, randomWords);
 
-//    for (auto d:result)
-//            std::cout<<d<<std::endl;
-
-
-//	while (true)
-//	{
-
-//
-
-//
-//
-//		//
-//
-//
-
-
-
+    //display result of the search
+    Printer::PrintOnOutputandWaitForUserToDecideWhatIsNext(result, randomWords);
 
 
 	return 0;

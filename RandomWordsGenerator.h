@@ -2,31 +2,18 @@
 
 #include <string>
 #include <vector>
+#include <ctime>
+#include <sstream>
 
 //looks into the lorem ipsum text and provides few random words out of it.
 class RandomWordsGenerator
 {
-    //Keep it simple, stupid - KISS - READABILITY improvemetn
-	typedef std::string line_t;
-	typedef std::vector<line_t> lines_t;
-	typedef std::string word_t;
-	typedef std::vector<word_t> words_t;
-
-	//splits the single line of text into words
-//	words_t GetWordsForLine(const line_t& line);
-
 
 public:
 
 	//gets few random words from the lorem ipsum text
-	 words_t GetFewRandomWords(const lines_t& lines);
+	 std::vector<std::string> GetFewRandomWords(const std::vector<std::string>& lines);
 	 std::vector<std::string> GetWordsForLine(const std::string& line);
 
-	 //destructor
-//	virtual ~RandomWordsGenerator();
-	//destructor
-    ~RandomWordsGenerator()
-    {
-    }
 };
 

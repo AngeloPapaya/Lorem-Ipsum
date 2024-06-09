@@ -3,7 +3,10 @@
 #include <string>
 #include <vector>
 #include <iostream>
-
+#include <fstream>
+#include <stdexcept>
+#include <chrono>
+#include <thread>
 
 // The class which loads the Lorem Ipsum lines from the file
 class LoremIpsumLinesProviderFromFile
