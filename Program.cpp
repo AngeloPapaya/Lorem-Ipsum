@@ -9,6 +9,8 @@ using namespace std;
 
 int main()
 {
+
+
 	//load lines of lorem ipsum text
 	LoremIpsumLinesProviderFromFile linesProvider("lorem_ipsum.txt");
 	vector<string> lines = linesProvider.GetLoremIpsumLines();
@@ -47,6 +49,10 @@ int main()
 //		//
 //
 //
+
+
+
+
 
 	return 0;
 }

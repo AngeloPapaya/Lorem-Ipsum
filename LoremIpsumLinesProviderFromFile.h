@@ -2,6 +2,7 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 
 
 // The class which loads the Lorem Ipsum lines from the file
