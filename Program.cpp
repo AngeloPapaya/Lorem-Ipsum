@@ -13,7 +13,7 @@ int main()
 
     RandomWordsGenerator randomWordsGenerator;
     LoremIpsumSearcher loremIpsumSearcher;
-
+    Printer printer;
 
     //get few random words
     std::vector<std::string> randomWords = randomWordsGenerator.GetFewRandomWords(lines);
@@ -22,7 +22,7 @@ int main()
     std::vector<std::string> result = loremIpsumSearcher.Search(lines, randomWords);
 
     //display result of the search
-    Printer::PrintOnOutputandWaitForUserToDecideWhatIsNext(result, randomWords);
+    printer.PrintOnOutputandWaitForUserToDecideWhatIsNext(result, randomWords);
 
 
 	return 0;

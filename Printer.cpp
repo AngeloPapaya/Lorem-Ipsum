@@ -1,6 +1,5 @@
 #include "Printer.h"
 
-
 //writes the vector to the output stream - each item is in a separate line
 std::ostream &operator<<(std::ostream& stream, const std::vector<std::string>& _vector)
 {

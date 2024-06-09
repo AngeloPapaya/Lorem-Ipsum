@@ -4,8 +4,8 @@
 //gets few random words from the lorem ipsum text
 std::vector<std::string> RandomWordsGenerator::GetFewRandomWords(const std::vector<std::string>& lines)
 {
-	std::vector<std::string> result;
-	srand((unsigned int)time(nullptr));
+    std::vector<std::string> result;
+    srand((unsigned int)time(nullptr));
 
     for (int i = 0; i < 3; ++i)
     {
@@ -20,9 +20,9 @@ std::vector<std::string> RandomWordsGenerator::GetFewRandomWords(const std::vect
 //splits the single line of text into words
 std::vector<std::string> RandomWordsGenerator::GetWordsForLine(const std::string& line)
 {
-	std::vector<std::string> result;
-	std::string word;
-	std::istringstream stream(line);
+    std::vector<std::string> result;
+    std::string word;
+    std::istringstream stream(line);
 
     while (getline(stream, word, ' '))
     {

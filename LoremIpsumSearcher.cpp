@@ -20,8 +20,6 @@ RandomWordsGenerator randomwordgenerator;
                 break;
             }
         }
-
 	}
-
     return resultOfSearch;
 }
